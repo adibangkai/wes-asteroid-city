@@ -15,6 +15,11 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+@layer components {
+  .main-bg {
+    @apply bg-gradient-to-b from-cyan-300 to-zinc-200;
+  }
+}
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,4 +29,12 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.title-text {
+  color: #f7a725;
+  font-family: var(--teko-font);
+  text-shadow: 8px 6px #9c2611;
+  font-weight: 600;
+  font-size: 7em;
 }
